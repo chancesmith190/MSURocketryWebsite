@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSU Rocketry</title>
-    <link rel="stylesheet" href="shootingStar.css"> <!-- Example CSS -->
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="shootingStars.css">
+    <script defer src="indexApp.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to MSU Rocketry!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="leadership.html">Leadership</a></li>
-            <li><a href="ourMission.html">Our Mission</a></li>
-            <li><a href="subteams.html">Subteams</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>This is the main website for MSU Rocketry. Explore our pages to learn more about us!</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 MSU Rocketry Team</p>
-    </footer>
+    <div class="buttonContainer">
+        <a href="index.html">
+            <input class="pill-left" type="image" src="images/logo.png" alt="Go to Homepage">
+        </a>
+        <div class="right-buttons">
+            <a href="leadership.html" class="pill-link"><button class="pillAll">About Us</button></a>
+            <a href="projects.html" class="pill-link"><button class="pillAll">Projects</button></a>
+            <a href="contact.html" class="pill-link"><button class="pillAll">Contact</button></a>
+        </div>
+    </div>
+    <div class="title">
+        <h1>From East Lansing to the Stars</h1>
+    </div>
+    <div class="sponsers">
+        <h2>Thanks to Our Sponsors!</h2>
+    </div>
 </body>
 </html>
