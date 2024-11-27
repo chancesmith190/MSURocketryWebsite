@@ -59,6 +59,17 @@ h1{
     font-size: 70px;
     margin-top: 200px;
 }
+
+.sponsors{
+    display:flex;
+    justify-content: center;
+    padding-top: 550px;
+}
+#textSpon{
+    color:white;
+    text-align:center;
+    font-size: 50px;
+}
 .pillAll:hover{
     background-color: #1e5a4a;
     font-weight: 600;
