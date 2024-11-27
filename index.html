@@ -6,24 +6,56 @@
     <title>MSU Rocketry</title>
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="shootingStars.css">
+    <link rel="stylesheet" href="circles.css">
     <script defer src="indexApp.js"></script>
 </head>
 <body>
+    <section>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section> 
     <div class="buttonContainer">
         <a href="index.html">
-            <input class="pill-left" type="image" src="images/logo.png" alt="Go to Homepage">
+            <input class="pill-left" type="image" src="images/logo3.png" alt="Go to Homepage">
         </a>
         <div class="right-buttons">
-            <a href="leadership.html" class="pill-link"><button class="pillAll">About Us</button></a>
-            <a href="projects.html" class="pill-link"><button class="pillAll">Projects</button></a>
-            <a href="contact.html" class="pill-link"><button class="pillAll">Contact</button></a>
+            <div class="dropdown">
+                <button>About Us</button>
+                <div class="content">
+                    <a href="ourMission.html">Our Mission</a>
+                    <a href="subteams.html">Subteams</a>
+                    <a href="leadership.html">Leadership</a>
+                </div>
+            </div>
+            <a href="projects.html" class="pill-link"><button class="pillAll" id="underline">Projects</button></a>
+            <a href="gallery.html" class="pill-link"><button class="pillAll" id="underline">Gallery</button></a>
+            <a href="contact.html" class="pill-link"><button class="pillAll" id="underline">Contact</button></a>
         </div>
     </div>
     <div class="title">
         <h1>From East Lansing to the Stars</h1>
     </div>
-    <div class="sponsers">
+    <div class="sponsors">
         <h2>Thanks to Our Sponsors!</h2>
+    </div>
+    <div class="circleContainer">
+        <div class="circle">
+            <p>Donate</p>
+        </div>
+        <div class="circle">
+            <p>Become a Sponsor</p>
+        </div>
+        <div class="circle">
+            <p>Join the Team</p>
+        </div>
     </div>
 </body>
 </html>

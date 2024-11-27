@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="contactStyle.css">
-    <link rel="stylesheet" type="text/css" href="shootingStar.css">
+    <link rel="stylesheet" type="text/css" href="shootingStars.css">
     <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="circles.css">
 </head>
 <body>
     <section>
@@ -23,12 +24,20 @@
     </section>
     <div class="buttonContainer">
         <a href="index.html">
-            <input class="pill-left" type="image" src="images/logo.png" alt="Go to Homepage">
+            <input class="pill-left" type="image" src="images/logo3.png" alt="Go to Homepage">
         </a>
         <div class="right-buttons">
-            <a href="leadership.html" class="pill-link"><button class="pillAll">About Us</button></a>
-            <a href="projects.html" class="pill-link"><button class="pillAll">Projects</button></a>
-            <a href="contact.html" class="pill-link"><button class="pillAll">Contact</button></a>
+            <div class="dropdown">
+                <button>About Us</button>
+                <div class="content">
+                    <a href="ourMission.html">Our Mission</a>
+                    <a href="subteams.html">Subteams</a>
+                    <a href="leadership.html">Leadership</a>
+                </div>
+            </div>
+            <a href="projects.html" class="pill-link"><button class="pillAll" id="underline">Projects</button></a>
+            <a href="gallery.html" class="pill-link"><button class="pillAll" id="underline">Gallery</button></a>
+            <a href="contact.html" class="pill-link"><button class="pillAll" id="underline">Contact</button></a>
         </div>
     </div>
     <div class="contact-container">

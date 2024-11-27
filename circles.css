@@ -1,0 +1,27 @@
+.circleContainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+.circle {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 300px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #18453b; 
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppin';
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.circle:hover {
+    background-color: #1e5a4a; 
+    cursor: pointer; 
+    transform: scale(1.1);
+}

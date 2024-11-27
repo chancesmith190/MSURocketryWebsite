@@ -1,6 +1,5 @@
 body{
     background-color: black;  
-    padding-bottom: 500px;
 }
 .buttonContainer {
     display: flex; 
@@ -57,6 +56,7 @@ body{
     color:white;
     margin-left: 150px;
     font-weight: bold;
+    font-family: 'Poppins';
 }
 
 .popup-text p{
@@ -65,6 +65,7 @@ body{
     font-size:20px;
     margin-top:25px;
     margin-bottom: 30px;
+    font-family: 'Poppins';
 }
 
 .popup .close-btn {
@@ -102,11 +103,12 @@ body{
 
 #t2{
     margin-left: 300px;
+    font-family: 'Poppins';
 }
 
 .pill{
     font-size: 20px;
-    font-family: roboto;
+    font-family: 'Poppins';
     padding: 0.5em 1em;
     border-radius: 1em;
     border:  none;
@@ -123,7 +125,7 @@ body{
 
 h1{ /*leadershipr*/
     color: white;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-size: 75px;
     text-align: center;
     padding-bottom: 250px;
@@ -157,6 +159,7 @@ h1{ /*leadershipr*/
     color: white;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Poppins';
 }
 #t1{
     color: white;
@@ -185,7 +188,7 @@ h1{ /*leadershipr*/
 
 h2{
     color: white;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-size: 50px;
     text-align: center;
     margin-top: -75px;

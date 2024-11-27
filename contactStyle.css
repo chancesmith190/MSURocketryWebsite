@@ -1,15 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-
 body{
     overflow-x: hidden;
     overflow-y: auto;
-    font-family:'Outfit';
+    font-family:'Poppins';
     background: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
 
@@ -18,6 +14,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 
 }
 
@@ -26,6 +26,9 @@ body{
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
 
@@ -34,6 +37,11 @@ body{
     color: white;
     font-size: 40px;
     margin-top: 5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
 }
 .contact-left-title hr{
     border: none;
@@ -42,7 +50,10 @@ body{
     background-color: #18453b;
     border-radius: 10px;
     margin-bottom: 20px;
-
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 .contact-inputs{
@@ -54,22 +65,28 @@ body{
     font-weight: 500;
     color: black;
     border-radius: 50px;
+    font-family: 'Poppins';
+
 }
 
 .contact-left textarea{
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
+    font-family: 'Poppins';
+
 
 }
 
 .contact-inputs:focus{
     border: 2px solid #18453b;
 
+
 }
 
 .contact-inputs::placeholder{
     color: lightgrey;
+
 
 }
 
@@ -83,7 +100,7 @@ body{
     border: none;
     border-radius: 50px;
     background: #18453b;
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 
 .contact-left button:hover{
@@ -95,10 +112,10 @@ body{
     gap: 10px;
     border: none;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 20px;
     background: #1e5a4a;
     transform: scale(1.1);
-    font-family: sans-serif;
+    font-family: 'Poppins';
 }
 
 @media (max-width: 800px) {
