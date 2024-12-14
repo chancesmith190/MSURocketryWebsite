@@ -8,13 +8,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-// Select both .box1 and .box2 elements
-const hiddenElements = document.querySelectorAll('.box1, .box2, .box3');
+const hiddenElements = document.querySelectorAll('.title, .underline, .person');
 hiddenElements.forEach((el) => observer.observe(el));
 
-function togglePopup(title, description) {
-    const popup = document.getElementById("popup-1");
-    popup.querySelector(".popup-text h3").textContent = title;
-    popup.querySelector(".popup-text p").textContent = description;
-    popup.classList.toggle("active");
-}
+

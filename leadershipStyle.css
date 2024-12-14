@@ -1,203 +1,100 @@
 body{
-    background-color: black;  
+    background-color: black;
+    margin: 0;
 }
-.buttonContainer {
-    display: flex; 
-    justify-content: flex-end;
-    gap: 15px;
-    font-weight: bold;
-}
-
-.popup .overlay {
-    position: fixed;
-    top:0px;
-    left:0px;
-    width:100vw;
-    height:100vh;
-    z-index: 1;
-    display:none;
-}
-
-.popup .content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 750px;
-    height: 300px;
-    background-color: #18453b;
-    font-size: 18px;
-    color: white;
-    border-radius: 20px;
-    padding: 15px;
-    z-index: 2;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between;
-}
-
-.popup-flex-container {
-    display: flex;
-    align-items: center;
-}
-
-.popup-image {
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
-    margin-left: 50px;
-    margin-right: 70px; /* Space between image and text */
-    border-radius: 40px;
-}
-
-.popup-text h3{
-    flex: 1;
-    font-size: 25px;
+#meet{
     color:white;
-    margin-left: 150px;
-    font-weight: bold;
-    font-family: 'Poppins';
-}
-
-.popup-text p{
-    margin-left:10px;
-    color:white;
-    font-size:20px;
-    margin-top:25px;
-    margin-bottom: 30px;
-    font-family: 'Poppins';
-}
-
-.popup .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.popup.active .overlay{
-    display:block;
-}
-
-.popup.active .content {
-    transition: \all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-#img2{
-    width: 200px;
-    height: 200px;
-    border-radius: 40px;
-    margin-top: -350px;
-    margin-right: 350px;
-}
-
-#t2{
-    margin-left: 300px;
-    font-family: 'Poppins';
-}
-
-.pill{
-    font-size: 20px;
-    font-family: 'Poppins';
-    padding: 0.5em 1em;
-    border-radius: 1em;
-    border:  none;
-    outline: none;
-    background-color: #18453b;
-    cursor: pointer;
-    color: #232529;
-    text-decoration: none;
-}
-
-.pill:hover{
-    background: #18453b;
-}
-
-h1{ /*leadershipr*/
-    color: white;
-    font-family: 'Poppins';
     font-size: 75px;
     text-align: center;
-    padding-bottom: 250px;
 }
-
-
-.container1{ /*format each box*/
+.title{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
-.box1{ /*customize each box*/
-    width: 300px;
-    height: 300px;
-    background-color: #3c4047 ;
-    border: 10px solid #18453b;
-    font-size: 18px;
-    text-align: center;
-    border-radius: 200px;
-    /* padding: 15px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
     opacity: 0; /*creates animation when scrolling*/
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s; 
     color: white;
-    margin: 50px;
 }
-
-#p1{
+#team{
     color: white;
-    font-weight: bold;
-    font-size: 20px;
     font-family: 'Poppins';
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 200px;
 }
-#t1{
-    color: white;
-}
-#img1{ /*sets image sizes*/
-    width: 300px;
-    height: 300px;
-    /* margin-top:50px; */
-    border-radius: 200px;
-}
-
-.box3{
-    width: 800px;
+.underline{
+    width: 900px;
     height: 5px;
     background-color: #18453b;
     border-radius: 15px;
+    margin-bottom: 200px;
+    opacity: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    width: 300px;
+    height: 600px;
+    background-color:#18453b;
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s; 
     color: white;
-    margin-top: 100px; 
-    margin-bottom: 50px;
-    
 }
 
-h2{
-    color: white;
-    font-family: 'Poppins';
-    font-size: 50px;
-    text-align: center;
-    margin-top: -75px;
+#pfp{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px;;
 }
-
-.container3{
+#position{
+    color:white;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    text-align: center;
+    margin-top: -5px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+#name{
+    color:white;
+    display: flex;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+#text{
+    color:white;
+    display: flex;
+    margin-top: 30px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+#picture{
+    width:100px;
+    height:100px;
 }
 
 .show{ /*creates animation when scrolling*/
@@ -205,49 +102,3 @@ h2{
     filter: blur(0);
     transform: translateX(0);
 }
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .popup .content {
-        width: 90%; /* Adjust width to fit smaller screens */
-        height: auto; /* Allow height to adjust automatically */
-        padding: 20px; /* Increase padding for better spacing */
-        font-size: 16px; /* Adjust font size for readability */
-    }
-
-    .popup-image {
-        width: 100px; /* Smaller image size for mobile */
-        height: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .popup-text h3 {
-        font-size: 20px; /* Adjust font size for title */
-        margin-left: 10px; /* Reduce margin */
-        margin-right: 10px;
-    }
-
-    .popup-text p {
-        font-size: 14px; /* Smaller font size for description */
-        margin-left: 10px;
-        margin-right: 10px; /* Add margin for better spacing */
-    }
-
-    .popup-flex-container {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        align-items: center; /* Center elements */
-    }
-
-    .popup-text {
-        text-align: center; /* Center text on smaller screens */
-    }
-
-}
-
-
-
-
-
-
-

@@ -58,6 +58,8 @@ h1{
     color:white;
     font-size: 70px;
     margin-top: 200px;
+    padding: 50px;
+    
 }
 
 .sponsors{
@@ -155,6 +157,7 @@ h1{
 
 .dropdown .content a:hover {
     background-color: #1e5a4a;
+    transform: scale(1.1);
 }
 
 .dropdown:hover button {
