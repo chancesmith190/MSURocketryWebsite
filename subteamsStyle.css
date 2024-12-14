@@ -25,6 +25,7 @@ body {
     border-radius: 25px;
     padding: 1px;
     margin-bottom:125px;
+    box-shadow: 0px 0px 200px 25px #18453b;
 }
 
 .box2 {
@@ -35,6 +36,7 @@ body {
     border-radius: 25px;
     padding:1px;
     margin-bottom:125px;
+    box-shadow: 0px 0px 200px 25px #18453b;
 }
 
 .box3 {
@@ -45,6 +47,7 @@ body {
     border-radius: 25px;
     padding:1px;
     margin-bottom:125px;
+    box-shadow: 0px 0px 200px 25px #18453b;
 }
 
 .box4 {
@@ -55,6 +58,7 @@ body {
     border-radius: 25px;
     padding:1px;
     margin-bottom:125px;
+    box-shadow: 0px 0px 200px 25px #18453b;
 }
 
 h1{
