@@ -65,6 +65,7 @@ body{
     width: 200px;
     height: 200px;
     margin: 50px;;
+    border-radius: 25px;
 }
 #position{
     color:white;
