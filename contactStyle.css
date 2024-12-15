@@ -12,6 +12,7 @@ body{
 .contact-container{
     height: 90vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -25,7 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 1.25rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,8 +36,8 @@ body{
 .contact-left-title h2{
     font-weight: 600;
     color: white;
-    font-size: 40px;
-    margin-top: 5px;
+    font-size: 2.5rem;
+    margin-top: 0.3125rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -45,11 +46,11 @@ body{
 }
 .contact-left-title hr{
     border: none;
-    width: 120px;
-    height: 5px;
+    width: 7.5rem;
+    height: 0.3125rem;
     background-color: #18453b;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -57,29 +58,29 @@ body{
 }
 
 .contact-inputs{
-    width: 400px;
-    height: 50px;
+    width: 25rem;
+    height: 3.125rem;
     border: none;
     outline: none;
-    padding-left: 25px;
+    padding-left: 1.5625rem;
     font-weight: 500;
     color: black;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-family: 'Poppins';
 
 }
 
 .contact-left textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 20px;
+    height: 8.75rem;
+    padding-top: 0.9375rem;
+    border-radius: 1.25rem;
     font-family: 'Poppins';
 
 
 }
 
 .contact-inputs:focus{
-    border: 2px solid #18453b;
+    border: 0.125rem solid #18453b;
 
 
 }
@@ -93,12 +94,12 @@ body{
 .contact-left button{
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1rem;
     color: white;
-    gap: 10px;
+    gap: 0.625rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     background: #18453b;
     font-family: 'Poppins';
 }
@@ -106,19 +107,19 @@ body{
 .contact-left button:hover{
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1rem;
     color: white;
-    gap: 10px;
+    gap: 0.625rem;
     border: none;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background: #1e5a4a;
     transform: scale(1.1);
     font-family: 'Poppins';
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .contact-inputs {
         width: 80vw;
     }
@@ -126,4 +127,3 @@ body{
         display: none;
     }
 }
-

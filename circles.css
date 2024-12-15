@@ -38,18 +38,19 @@
 } */
 
 .circleContainer{
-    margin-left: 250px;
-    margin-bottom: 100px;
     display:flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 250px;
+    margin-bottom: 100px;
+    gap: 25px;
 }
 
 .circle{
     display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
+    padding: 20px;
+    /* transform: translate(-50%, -50%); */
   }
   
   #bottom{

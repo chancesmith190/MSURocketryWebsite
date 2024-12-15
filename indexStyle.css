@@ -9,18 +9,18 @@ body{
     align-items: flex-start;
     position: relative;
     width: 100%;
-    height: 55px;
+    height: 3.4375rem;
     background-color: #18453b;
 }
 .pill-left{
     margin-right: auto;
     display: flex;
-    width:60px;
+    width:3.75rem;
     height:auto;
 }
 .right-buttons {
     display:flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 .pill-link {
     text-decoration: none;
@@ -28,10 +28,10 @@ body{
 .pillAll{
     background-color: #18453b;
     border: none;
-    width: 150px;
-    height: 52px;
-    border-radius: 15px;
-    font-size: 25px;
+    width: 9.375rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    font-size: 1.5625rem;
     color: white;
     cursor:pointer;
     font-family: 'Poppins';
@@ -56,10 +56,9 @@ body{
 }
 h1{
     color:white;
-    font-size: 70px;
-    margin-top: 200px;
-    padding: 50px;
-    
+    font-size: 4.375rem;
+    margin-top: 12.5rem;
+    padding: 3.125rem;
 }
 
 .video {
@@ -67,31 +66,33 @@ h1{
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    margin: 250px auto 0 auto; 
+    margin: 15.625rem auto 0 auto; 
     width: 90%; 
-    max-width: 1250px;
+    max-width: 78.125rem;
     height: auto; 
-    box-shadow: 0px 0px 200px 50px #18453b;
-    padding: 20px;
+    box-shadow: 0px 0px 12.5rem 3.125rem #18453b;
+    padding: 1.25rem;
 }
 
 #videoInfo{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color:white;
-    font-size: 75px;
+    font-size: 4.6875rem;
     font-family: 'Poppins';
     font-weight: 600;
-    margin-top: 100px;
+    margin-top: 6.25rem;
+    padding: 1.5625rem;
 }
 
 .info-container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 300px;
-    margin-left: 130px; 
-    margin-right: 130px;
-    gap: 300px;
+    margin-top: 18.75rem;
+    gap: 18.75rem;
 }
 
 .info {
@@ -99,64 +100,65 @@ h1{
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
-    height: 750px;
-    width: 500px;
-    border-radius: 25px;
+    height: 46.875rem;
+    width: 31.25rem;
+    border-radius: 1.5625rem;
     background-color: white;
-    box-shadow: 0px 0px 200px 50px #18453b;
+    box-shadow: 0px 0px 12.5rem 3.125rem #18453b;
 }
 
 #sponsText{
     color: #18453b;
     font-family: 'Poppins';
-    font-size: 50px;
-    margin-left: 50px;
+    font-size: 3.125rem;
+    margin-left: 3.125rem;
     margin-top: 0px;
     font-weight: 600;
 }
 .sponsImages{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5625rem;
+    padding: 0.625rem;
 }
 #asmsu{
-    width: 300px;
+    width: 18.75rem;
     height: auto;
 }
 #college{
-    width: 300px;
+    width: 18.75rem;
     height: auto;
 }
 #solid{
-    width: 300px;
+    width: 18.75rem;
     height: auto;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 }
 
 #amorim{
-    width: 300px;
+    width: 18.75rem;
     height: auto;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
 }
 
 #projectText{
     color: #18453b;
     font-family: 'Poppins';
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 600;
-    margin-bottom: 525px;
+    margin-bottom: 32.8125rem;
 }
 .learn{
     background-color: #18453b;
     border: none;
-    width: 150px;
-    height: 52px;
-    border-radius: 15px;
-    font-size: 25px;
+    width: 9.375rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    font-size: 1.5625rem;
     color: white;
     cursor:pointer;
     font-family: 'Poppins';
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
 }
 .learn:hover{
     transform: scale(1.1);
@@ -175,7 +177,7 @@ h1{
 .dropdown {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px; 
+    padding-bottom: 0.625rem; 
 }
 
 .dropdown:hover .content {
@@ -185,10 +187,10 @@ h1{
 .dropdown button {
     background-color: #18453b;
     border: none;
-    width: 150px;
-    height: 52px;
-    border-radius: 15px;
-    font-size: 25px;
+    width: 9.375rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    font-size: 1.5625rem;
     color: white;
     cursor: pointer;
     font-family: 'Poppins';
@@ -199,7 +201,7 @@ h1{
 .dropdown button:after {
     content: "";
     position: absolute;
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     background-color: white; 
     left: 0;
@@ -215,10 +217,10 @@ h1{
     display: none; 
     position: absolute;
     background-color: #18453b;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    top: 62px; 
+    width: 9.375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    top: 3.875rem; 
     left: 0;
     z-index: 1;
 }
@@ -228,17 +230,17 @@ h1{
     color: white;
     text-decoration: none; 
     display: block;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 0.625rem 0.9375rem;
+    font-size: 1.125rem;
     font-family: 'Poppins';
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .dropdown .content a:after {
     content: "";
     position: absolute;
     background-color: white; 
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     left: 0;
     bottom: 0px; 
@@ -269,7 +271,7 @@ h1{
     content: "";
     position: absolute;
     background-color: white;
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     left: 0;
     bottom: 0px;
@@ -279,7 +281,3 @@ h1{
 #underline:hover:after {
     width: 100%; 
 }
-
-
-
-

@@ -1,152 +1,160 @@
 body {
     background-color: black;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
-#context{
-    color:white; 
-    font-size:20px;
-    padding-bottom: 300px;
+#context {
+    color: white; 
+    font-size: 1.25rem;
+    padding-bottom: 18.75rem;
     font-weight: 600;
     text-align: center;
-    
 }
+
 .container {
     display: flex;
     flex-direction: row;
 }
 
 .box1 {
-    width:850px;
-    height:350px;
+    width: 53.125rem;
+    height: 21.875rem;
     background: #18453b;
     margin-right: auto;
-    border-radius: 25px;
-    padding: 1px;
-    margin-bottom:125px;
-    box-shadow: 0px 0px 200px 25px #18453b;
+    border-radius: 1.5625rem;
+    padding: 0.0625rem;
+    margin-bottom: 7.8125rem;
+    box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
 .box2 {
-    width:850px;
-    height:350px;
+    width: 53.125rem;
+    height: 21.875rem;
     background: #18453b;
     margin-left: auto;
-    border-radius: 25px;
-    padding:1px;
-    margin-bottom:125px;
-    box-shadow: 0px 0px 200px 25px #18453b;
+    border-radius: 1.5625rem;
+    padding: 0.0625rem;
+    margin-bottom: 7.8125rem;
+    box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
 .box3 {
-    width:850px;
-    height:350px;
+    width: 53.125rem;
+    height: 21.875rem;
     background: #18453b;
     margin-right: auto;
-    border-radius: 25px;
-    padding:1px;
-    margin-bottom:125px;
-    box-shadow: 0px 0px 200px 25px #18453b;
+    border-radius: 1.5625rem;
+    padding: 0.0625rem;
+    margin-bottom: 7.8125rem;
+    box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
 .box4 {
-    width:850px;
-    height:350px;
+    width: 53.125rem;
+    height: 21.875rem;
     background: #18453b;
     margin-left: auto;
-    border-radius: 25px;
-    padding:1px;
-    margin-bottom:125px;
-    box-shadow: 0px 0px 200px 25px #18453b;
+    border-radius: 1.5625rem;
+    padding: 0.0625rem;
+    margin-bottom: 7.8125rem;
+    box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
-h1{
-    color:white;
-    font-size: 75px;
+h1 {
+    color: white;
+    font-size: 4.6875rem;
     text-align: center;
 }
 
-#left{
-    color:white;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 75px;
-    font-size: 50px;
-}
-
-#right{
-    color:white;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 75px;
-    font-size: 50px;
-}
-
-p{
+#left {
     color: white;
-    padding-left: 75px;
-    padding-right: 75px;
-    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 4.6875rem;
+    font-size: 3.125rem;
 }
 
-.buttonContainer{
-    display:flex;
+#right {
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 4.6875rem;
+    font-size: 3.125rem;
+}
+
+p {
+    color: white;
+    padding-left: 4.6875rem;
+    padding-right: 4.6875rem;
+    font-size: 1.25rem;
+}
+
+.buttonContainer {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
     width: 100%;
-    height: 55px;
+    height: 3.4375rem;
     background-color: #18453b;
 }
-.pill-left{
+
+.pill-left {
     margin-right: auto;
     display: flex;
-    width:60px;
-    height:auto;
+    width: 3.75rem;
+    height: auto;
 }
+
 .right-buttons {
-    display:flex;
-    gap: 10px;
+    display: flex;
+    gap: 0.625rem;
 }
+
 .pill-link {
     text-decoration: none;
 }
-.pillAll{
+
+.pillAll {
     background-color: #18453b;
     border: none;
-    width: 150px;
-    height: 52px;
-    border-radius: 15px;
-    font-size: 25px;
+    width: 9.375rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    font-size: 1.5625rem;
     color: white;
-    cursor:pointer;
+    cursor: pointer;
     font-family: 'Poppins';
 }
-.pillAll:hover{
+
+.pillAll:hover {
     background-color: #1e5a4a;
     transform: scale(1.1);
     font-weight: 600;
     font-family: 'Poppins';
 }
 
-.hidden{
+.hidden {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(0.3125rem);
     transform: translateX(-100%);
     transition: all 1s;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
 }
-h1{
-    color:white;
-    font-size: 75px;
-    margin-top: 200px;
+
+h1 {
+    color: white;
+    font-size: 4.6875rem;
+    margin-top: 12.5rem;
 }
-.pillAll:hover{
+
+.pillAll:hover {
     background-color: #1e5a4a;
     font-weight: 600;
     font-family: 'Poppins';
@@ -155,7 +163,7 @@ h1{
 .dropdown {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px; 
+    padding-bottom: 0.625rem; 
 }
 
 .dropdown:hover .content {
@@ -165,10 +173,10 @@ h1{
 .dropdown button {
     background-color: #18453b;
     border: none;
-    width: 150px;
-    height: 52px;
-    border-radius: 15px;
-    font-size: 25px;
+    width: 9.375rem;
+    height: 3.25rem;
+    border-radius: 0.9375rem;
+    font-size: 1.5625rem;
     color: white;
     cursor: pointer;
     font-family: 'Poppins';
@@ -179,7 +187,7 @@ h1{
 .dropdown button:after {
     content: "";
     position: absolute;
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     background-color: white; 
     left: 0;
@@ -195,10 +203,10 @@ h1{
     display: none; 
     position: absolute;
     background-color: #18453b;
-    width: 150px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    top: 62px; /* Creates a visible gap */
+    width: 9.375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    top: 3.875rem; /* Creates a visible gap */
     left: 0;
     z-index: 1;
 }
@@ -208,17 +216,17 @@ h1{
     color: white;
     text-decoration: none; 
     display: block;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 0.625rem 0.9375rem;
+    font-size: 1.125rem;
     font-family: 'Poppins';
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .dropdown .content a:after {
     content: "";
     position: absolute;
     background-color: white; 
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     left: 0;
     bottom: 0px; 
@@ -239,7 +247,7 @@ h1{
     font-weight: 600;
 }
 
-#underline{
+#underline {
     position: relative; 
     text-decoration: none;
 }
@@ -248,7 +256,7 @@ h1{
     content: "";
     position: absolute;
     background-color: white;
-    height: 3px; 
+    height: 0.1875rem; 
     width: 0; 
     left: 0;
     bottom: 0px;
@@ -259,18 +267,15 @@ h1{
     width: 100%; 
 }
 
-.hidden{
+.hidden {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(0.3125rem);
     transform: translateX(-100%);
     transition: all 1s;
 }
 
-.show{ /*creates animation when scrolling*/
+.show { /*creates animation when scrolling*/
     opacity: 1; 
     filter: blur(0);
     transform: translateX(0);
-
 }
-
-
