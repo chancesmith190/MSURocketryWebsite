@@ -8,7 +8,7 @@
     to {background-position:10000px 0;}
 }
 
-.stars, .twinkling, .clouds {
+.stars, .twinkling{
   position:fixed;
   top:0;
   left:0;
@@ -28,5 +28,5 @@
 .twinkling{
   background:transparent url(images/twinkling.png) repeat top center;
   z-index:-9;
-  animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 600s linear infinite;
 }

@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="circles.css">
     <link rel="stylesheet" href="stars.css">
     <script defer src="indexApp.js"></script>
+    
+
 </head>
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div>
-    <div class="buttonContainer">
+    <!-- <div class="buttonContainer">
         <a href="index.html">
             <input class="pill-left" type="image" src="images/logo3.png" alt="Go to Homepage">
         </a>
@@ -29,7 +31,31 @@
             <a href="gallery.html" class="pill-link"><button class="pillAll" id="underline">Gallery</button></a>
             <a href="contact.html" class="pill-link"><button class="pillAll" id="underline">Contact</button></a>
         </div>
-    </div>
+    </div> -->
+    <nav>
+        <ul>
+            <li id="logo-link"><a href="index.html"><img id="logo" src="images/msu.png"></a></li>
+            <li class="hideOnMobile">
+                <a href="#">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="ourMission.html">Our Mission</a></li>
+                    <li><a href="subteams.html">Subteams</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="galley.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <div class="title">
         <h1>From East Lansing to the Stars</h1>
     </div>
