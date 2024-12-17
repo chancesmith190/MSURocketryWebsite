@@ -87,7 +87,7 @@ h1{
     font-size: 4.6875rem;
     font-family: 'Poppins';
     font-weight: 600;
-    margin-top: 6.25rem;
+    margin-top: 5.25rem;
     padding: 1.5625rem;
 }
 
@@ -117,7 +117,7 @@ h1{
     font-family: 'Poppins';
     font-size: 3.125rem;
     margin-left: 3.125rem;
-    margin-top: 0px;
+    margin-top: -1.5rem;
     font-weight: 600;
 }
 .sponsImages{
@@ -151,7 +151,7 @@ h1{
     font-family: 'Poppins';
     font-size: 3.125rem;
     font-weight: 600;
-    margin-bottom: 32.8125rem;
+    margin-bottom: 28.8125rem;
 }
 .learn{
     background-color: #18453b;
