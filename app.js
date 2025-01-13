@@ -1,3 +1,14 @@
+// Persist animation state for twinkling
+const twinklingElement = document.querySelector('.twinkling');
+
+const animationStartTime = localStorage.getItem('animationStartTime') || Date.now();
+localStorage.setItem('animationStartTime', animationStartTime);
+
+const elapsedTime = (Date.now() - animationStartTime) / 1000; // seconds
+twinklingElement.style.animationDelay = `-${elapsedTime}s`;
+
+
+
 const observer = new IntersectionObserver((entries) => { 
     entries.forEach((entry) => {
         console.log(entry) 
@@ -10,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 // Select both .box1 and .box2 elements
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('.hidden, .titleLeadership, .underline, .person');
 hiddenElements.forEach((el) => observer.observe(el));
 
 function showSidebar(){
