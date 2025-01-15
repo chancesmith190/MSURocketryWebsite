@@ -108,6 +108,7 @@ nav li:first-child{
     justify-content: space-between; /* Pushes logo to the left and items to the right */
     padding: 0 20px;
     box-sizing: border-box; /* Includes padding in width calculations */
+    z-index: 999;
 }
 
 #logo-link {
@@ -143,6 +144,7 @@ nav li:first-child{
 
 .dropdown {
     display: none;
+    z-index: 999;
 }
 
 .nav ul li:hover .dropdown {
@@ -151,16 +153,19 @@ nav li:first-child{
     left: 0;
     top: 100%;
     background-color: black;
+    z-index: 999;
 }
 
 .dropdown ul {
     display: block;
     margin: 10px;
+    z-index: 999;
 }
 
 .dropdown ul li {
     width: 150px;
     padding: 10px;
+    z-index: 999;
 }
 
 #homeLogo {
