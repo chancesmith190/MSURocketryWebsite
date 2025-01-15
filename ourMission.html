@@ -9,30 +9,26 @@
 <body>
     <div class="stars"></div>
     <div class="twinkling"></div> 
-    <nav>
+    <div class="nav">
+        <div id="logo-link">
+            <a href="index.html"><img id="homeLogo" src="images/msu.png" alt="Logo"></a>
+        </div>
         <ul>
-            <li id="logo-link"><a href="index.html"><img id="logo" src="images/msu.png"></a></li>
-            <li class="hideOnMobile">
-                <a href="#">About Us</a>
-                <ul class="dropdown">
-                    <li><a href="ourMission.html">Our Mission</a></li>
-                    <li><a href="subteams.html">Subteams</a></li>
-                    <li><a href="leadership.html">Leadership</a></li>
-                </ul>
+            <li>
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="ourMission.html">Our Mission</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="subteams.html">Subteams</a></li>
+                    </ul>
+                </div>
             </li>
-            <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
-            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
-            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <ul class="sidebar">
-            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="galley.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    </div>
     <div class="mission">
         <p id="mis">Our Mission</p>
     </div>
