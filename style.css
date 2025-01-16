@@ -104,16 +104,18 @@ nav li:first-child{
     height: 80px;
     background-color: black;
     display: flex;
-    align-items: center; /* Vertically centers the items */
-    justify-content: space-between; /* Pushes logo to the left and items to the right */
+    align-items: center; 
+    justify-content: space-between; 
     padding: 0 20px;
-    box-sizing: border-box; /* Includes padding in width calculations */
-    z-index: 999;
+    box-sizing: border-box; 
+    border-bottom: 1px solid;
+    border-color: white;
 }
+
 
 #logo-link {
     display: flex;
-    align-items: center; /* Centers the logo vertically */
+    align-items: center;
 }
 
 .nav ul {
@@ -121,17 +123,19 @@ nav li:first-child{
     display: flex;
     margin: 0;
     padding: 0;
-    align-items: center; /* Vertically centers the navigation items */
-    justify-content: flex-end; /* Ensures navigation stays on the right */
-    flex-grow: 1; /* Fills the remaining space */
+    align-items: center; 
+    justify-content: flex-end; 
+    flex-grow: 1; 
 }
 
 .nav ul li {
-    padding: 0 20px; /* Adds spacing between navigation items */
+    display: flex;
+    padding: 0 20px; 
     position: relative;
 }
 
 .nav ul li a {
+    display: flex;
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -144,7 +148,6 @@ nav li:first-child{
 
 .dropdown {
     display: none;
-    z-index: 999;
 }
 
 .nav ul li:hover .dropdown {
@@ -153,25 +156,66 @@ nav li:first-child{
     left: 0;
     top: 100%;
     background-color: black;
-    z-index: 999;
 }
 
 .dropdown ul {
     display: block;
     margin: 10px;
-    z-index: 999;
 }
 
 .dropdown ul li {
     width: 150px;
     padding: 10px;
-    z-index: 999;
 }
 
 #homeLogo {
     width: 275px;
     height: auto;
 }
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.nav ul li:nth-child(4) a {
+    background-color: black;
+    border-radius: 275px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.nav ul li:nth-child(4) a::after, .nav ul li:nth-child(4) a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var(--angle), transparent, #18453b);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 3px;
+    border-radius: 275px;
+    animation: 3s spin linear infinite;
+    z-index: -1; 
+}
+
+.nav ul li:nth-child(4) a::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
 
 
 
@@ -222,6 +266,8 @@ h1{
     flex-direction: row;
     margin-top: 18.75rem;
     gap: 18.75rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
 }
 
 /* sponsors */
@@ -919,4 +965,21 @@ h1 {
     background-color: #1e5a4a;
     transform: scale(1.1);
     font-weight: 700;
+}
+
+/* gallery */
+body{
+    background-color: black;
+}
+.layout-container{
+    padding-top: 16rem;
+    width: min(1000px, 100%);
+    margin: 0 auto;
+    columns: 3 300px;
+    column-gap: 1em;
+}
+.layout-container img{
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
 }
