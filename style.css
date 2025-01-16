@@ -110,6 +110,7 @@ nav li:first-child{
     box-sizing: border-box; 
     border-bottom: 1px solid;
     border-color: white;
+    z-index: 999;
 }
 
 
