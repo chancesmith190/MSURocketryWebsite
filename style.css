@@ -474,9 +474,14 @@ h1{
         height: auto;
     }
 
+    .project-button{
+        width: 35rem;
+
+    }
+
     #cad {
-        margin-top: 25px;
-        margin-left: 60px;
+        margin-top: 1rem;
+        margin-left: 6rem;
     }
     .circle{
         display: flex;
@@ -1111,9 +1116,3 @@ body{
     margin-bottom: 1em;
     width: 100%;
 }
-
-
-
-
-
-
