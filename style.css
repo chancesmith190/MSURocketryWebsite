@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* navigation bar */
@@ -443,22 +444,22 @@ h1{
 
     }
 
-
-
     #project-text{
-        margin-top: 0.9rem;
+        font-size: 2.5rem;
+        padding-top: 1.5rem;
     }
 
     #sponsors-text{
-        margin-top: -0.7rem;
-    }
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }  
     
 
     .container-homepage .sponsors,
     .container-homepage .project {
         width: 100%;
-        padding: 1.5rem;
         margin-bottom: 4rem;
+        height: 30rem;
 
     }
 
@@ -470,8 +471,12 @@ h1{
     #sponsors-images, #sponsors-dafs {
         display: flex;
         flex-direction: row;
-        width: 5rem; /* Scale images within containers */
+        width: 7rem; /* Scale images within containers */
         height: auto;
+    }
+
+    #sponsors-dafs{
+        margin-right: 3rem;
     }
 
     .project-button{
@@ -481,13 +486,26 @@ h1{
 
     #cad {
         margin-top: 1rem;
-        margin-left: 6rem;
+        margin-left: 4rem;
+        width: 22.5rem;
     }
     .circle{
+
         display: flex;
         flex-direction: column;
         margin: -25px;
     }
+
+    #bottom{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        width: 18rem;
+        height: 3.5rem;
+        text-align: center;
+    }
+
+
 
 
 }
@@ -506,6 +524,7 @@ h1{
     #video-text {
         font-size: 2.5rem;
         margin-top: 6rem;
+        text-align: center;
     }
 
     .container-homepage .sponsors,
