@@ -456,9 +456,10 @@ h1{
 
     .container-homepage .sponsors,
     .container-homepage .project {
-        width: 90%;
+        width: 100%;
         padding: 1.5rem;
         margin-bottom: 4rem;
+
     }
 
     .images-homepage {
@@ -477,6 +478,13 @@ h1{
         margin-top: 25px;
         margin-left: 60px;
     }
+    .circle{
+        display: flex;
+        flex-direction: column;
+        margin: -25px;
+    }
+
+
 }
 
 /* For devices with a maximum width of 767px */
@@ -559,42 +567,7 @@ h1{
     }
 }
 
-/* For devices with a minimum width of 1200px */
-@media (min-width: 1200px) {
-    .title h1 {
-        font-size: 4.5rem;
-        margin-top: 12rem;
-    }
 
-    #video-text {
-        font-size: 4.5rem;
-        margin-top: 8rem;
-    }
-
-    .container-homepage .sponsors,
-    .container-homepage .project {
-        width: 65rem;
-        padding: 2rem;
-        margin-bottom: 8rem;
-        overflow: hidden; /* Prevent overflow */
-    }
-
-    .images-homepage {
-        gap: 4rem;
-    }
-
-    #sponsors-images, #sponsors-dafs {
-        max-width: 8rem;
-        max-height: 8rem;
-        object-fit: contain;
-    }
-
-    #cad {
-        max-width: 50rem;
-        max-height: 20rem;
-        height: auto;
-    }
-}
 
 
 /* our mission */
