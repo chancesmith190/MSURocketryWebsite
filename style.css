@@ -139,19 +139,17 @@
 .circle{
     display: flex;
     justify-content: center;
-    padding: 20px;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
   
 #bottom{
     border-radius: 10px;
-    padding: 10px;
-    display: block;
-    width: 250px;
-    height: 50px;
+    width: 25rem;
+    height: 5rem;
     line-height: 45px;
-    font-size: 25px;
+    padding: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-family: sans-serif;
     text-decoration: none;
@@ -219,66 +217,6 @@
   background:transparent url(images/twinkling.png) repeat top center;
   z-index:-9;
   animation:move-twink-back 600s linear infinite;
-}
-
-/* buttons on bottom of page */
-.circleContainer{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 100px;
-    gap: 25px;
-}
-
-.circle{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-  
-#bottom{
-    border-radius: 10px;
-    padding: 10px;
-    display: block;
-    width: 250px;
-    height: 50px;
-    line-height: 45px;
-    font-size: 25px;
-    text-align: center;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: white;
-    border: 2px solid #18453b;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-}
-
-#bottom span{
-    position: relative;
-    z-index: 2;
-}
-
-#bottom:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #18453b;
-    transition: all .35s;
-}
-
-#bottom:hover{
-    color: #fff;
-}
-
-#bottom:hover:after{
-    width: 100%;
 }
 
 /* star animation */
@@ -367,7 +305,7 @@ h1{
     flex-direction: column; 
     align-items: center;
     justify-content: flex-start; 
-    height: 20rem;
+    height: 30rem;
     width: 65rem;
     border-radius: 1.5625rem;
     background: linear-gradient(to bottom, #18453b 35%, white 35%);
@@ -381,26 +319,29 @@ h1{
     font-family: 'Poppins';
     font-size: 3rem;
     font-weight: 600;
+    margin-top: 1.5rem;
 }
 
 .images-homepage {
-    display: flex; 
+    margin-top: 4rem;
+    display: flex;
     justify-content: space-evenly;
-    gap: 4rem;
-    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    gap: .5rem;
 }
 
-#sponsors-images {
-    width: 8rem; 
+#sponsors-images, #sponsors-dafs {
+    display: flex;
+    flex-direction: row;
+    width: 15rem; 
     height: auto;
     object-fit: contain;
 }
 
 #sponsors-dafs{
     transform: rotate(90deg);
-    width: 6.25rem;
+    width: 5rem;
     height: auto;
-    object-fit: contain;
     margin-left: 3rem;
 }
 
@@ -411,6 +352,7 @@ h1{
 }
 
 #cad{
+    margin-top: 2rem;
     width: 50rem;
     height: auto
 }
@@ -423,7 +365,7 @@ h1{
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
     .title h1 {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-top: 4rem;
         line-height: 1.3;
     }
@@ -457,7 +399,7 @@ h1{
 
     .container-homepage .sponsors,
     .container-homepage .project {
-        width: 100%;
+        width: 80%;
         margin-bottom: 4rem;
         height: 30rem;
 
@@ -471,7 +413,7 @@ h1{
     #sponsors-images, #sponsors-dafs {
         display: flex;
         flex-direction: row;
-        width: 7rem; /* Scale images within containers */
+        width: 80%; 
         height: auto;
     }
 
@@ -504,17 +446,97 @@ h1{
         height: 3.5rem;
         text-align: center;
     }
+}
+
+@media (max-width: 600px) {
+    .title h1 {
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 4rem;
+        line-height: 1.3;
+    }
+
+    .video-homepage {
+        width: 80%;
+        height: auto;
+        margin-top: 8rem;
+    }
+
+    #video-text {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    #sponsors-text, #project-text{
+        font-size: 2.5rem;
+
+    }
+
+    #sponsors-text{
+        margin-top: 0.5rem;
+    }
 
 
+    
 
+    .container-homepage .sponsors,
+    .container-homepage .project {
+        width: 80%;
+        margin-bottom: 4rem;
+        height: 30rem;
 
+    }
+
+    .images-homepage {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    #sponsors-images, #sponsors-dafs {
+        display: flex;
+        flex-direction: row;
+        width: 8rem; 
+        height: auto;
+    }
+
+    #sponsors-dafs{
+        width: 4rem;
+        margin-right: 3rem;
+    }
+
+    .project-button{
+        width: 35rem;
+
+    }
+
+    #cad {
+        margin-top: 4rem;
+        width: 20rem;
+    }
+    .circle{
+        display: flex;
+        flex-direction: column;
+        margin: -25px;
+    }
+
+    #bottom{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        width: 20rem;
+        height: 3.5rem;
+        text-align: center;
+    }
 }
 
 /* For devices with a maximum width of 767px */
-@media (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 767px) {
     .title h1 {
-        font-size: 2.5rem;
+        color: green;
+        font-size: 4.5rem;
         margin-top: 6rem;
+        padding: 1rem;
     }
 
     .video-homepage {
@@ -522,74 +544,146 @@ h1{
     }
 
     #video-text {
-        font-size: 2.5rem;
+        font-size: 4rem;
         margin-top: 6rem;
         text-align: center;
     }
 
     .container-homepage .sponsors,
     .container-homepage .project {
-        width: 85%;
+        width: 40rem;
         padding: 2rem;
         margin-bottom: 6rem;
-        overflow: hidden; /* Prevent overflow */
+        overflow: hidden; 
+        height: 35rem;
     }
+    #sponsors-text{
+        font-size: 3rem;
+        margin-top: 2.5rem;
 
+    }
     .images-homepage {
+        margin-top: 6rem;
+        flex-wrap: wrap;
         gap: 2rem;
     }
 
-    #sponsors-images, #sponsors-dafs {
-        max-width: 85%;
-        max-height: 7rem;
+    #sponsors-images{
+        width: 10rem;
         object-fit: contain;
     }
 
-    #cad {
-        max-width: 70%;
-        max-height: 15rem;
-        height: auto;
+    #sponsors-dafs{
+        width: 6rem;
+    }
+
+    #project-text{
+        margin-top: 2.5rem;
+        font-size: 3rem;
+    }
+
+    #cad{
+        margin-top: 5rem;
+        width: 35rem;
+    }
+    .circle{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+
+    #bottom{
+        font-size: 2rem;
+        width: 25rem;
+        height: 5rem;
     }
 }
 
 /* For devices with a minimum width of 768px and maximum width of 1200px */
 @media (min-width: 768px) and (max-width: 1200px) {
     .title h1 {
-        font-size: 3rem;
+        text-align: center;
+        color: orange;
         margin-top: 8rem;
+        font-size: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     #video-text {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 7rem;
+    }
+
+    #video-homepage{
+        width: 70%;
     }
 
     .container-homepage .sponsors,
     .container-homepage .project {
-        width: 75%;
+        width: 80%;
         padding: 2rem;
         margin-bottom: 6rem;
-        overflow: hidden; /* Prevent overflow */
+        overflow: hidden; 
+        height: 35rem;
 
+    }
+
+    #sponsors-text{
+        font-size: 3rem;
+        margin-top: 1.5rem;
     }
 
     .images-homepage {
         flex-wrap: wrap;
         gap: 3rem;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-top: 6rem;
+        padding: 0rem;
     }
 
     #sponsors-images, #sponsors-dafs {
-        max-width: 75%;
-        max-height: 8rem;
-        object-fit: contain;
+        width: 10rem; 
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sponsors-dafs{
+        width: 6rem;
+    }
+
+    #project-text{
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 1.5rem;
     }
 
     #cad {
-        max-width: 60%;
-        max-height: 18rem;
+        width: 90%;
+        margin-top: 6rem;
+        margin-left: 2rem;
         height: auto;
     }
+
+    .circle{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #bottom{
+        width: 25rem;
+        height: 4rem;
+    }
+
+
 }
+
 
 
 
