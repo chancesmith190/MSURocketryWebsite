@@ -24,14 +24,30 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden, .titleLeadership, .underline, .person');
 hiddenElements.forEach((el) => observer.observe(el));
 
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-}
+/* Enable Click-to-Expand Dropdowns on Mobile */
+document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".nav-links");
+    const hamburger = document.querySelector(".hamburger");
 
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-}
+    document.addEventListener("click", function (event) {
+        if (menu.classList.contains("active")) {
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove("active");
+            }
+        }
+    });
+
+    hamburger.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+});
+
+
+
+
+
+
+
+
 
 

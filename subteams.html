@@ -14,10 +14,16 @@
     <div class="twinkling"></div> 
     <div class="nav">
         <div id="logo-link">
-            <a href="index.html"><img id="homeLogo" src="images/msu.png" alt="Logo"></a>
+            <a href="index.html">
+                <img id="homeLogo" src="images/msu.png" alt="Logo">
+            </a>
         </div>
-        <ul>
-            <li>
+    
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+        <ul class="nav-links">
+
+            <li class="about-us">
                 <a href="#">About Us <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown">
                     <ul>
@@ -27,9 +33,16 @@
                     </ul>
                 </div>
             </li>
+    
+
+            <li class="mobile-only"><a href="ourMission.html">Our Mission</a></li>
+            <li class="mobile-only"><a href="leadership.html">Leadership</a></li>
+            <li class="mobile-only"><a href="subteams.html">Subteams</a></li>
+    
             <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    
+            <li class="contact-button"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     <div class="title">
