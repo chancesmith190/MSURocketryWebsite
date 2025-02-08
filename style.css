@@ -390,12 +390,12 @@ img{
 }
 
 .title{
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Poppins';
     margin-top: 16rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 h1{
     color:white;
@@ -644,16 +644,94 @@ h1{
     padding: 50px;
     margin-bottom: 10rem;
 }
-
-.container .subteams{
-
+.container-subteams {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+/* Text Boxes */
+.box-subteam {
+    width: 45rem;
+    height: 20rem;
+    padding: 2rem;
+    background-color: #18453b;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
+    z-index: 1;
+}
+
+/* Image Styling */
+.box-wrapper img {
+    height: auto;
+    z-index: 0;
+}
+
+#payload-image{
+    width: 25rem;
+    transform: rotate(333deg);
+}
+
+#manu-image{
+    width: 25rem;
+    transform: rotate(210deg);
+}
+
+#ebay-image{
+    width: 25rem;
+    transform: rotate(330deg);
+}
+
+#sparty-image{
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.box-wrapper:nth-child(odd) {
+    flex-direction: row;
+}
+
+.box-wrapper:nth-child(odd) .box {
+    text-align: left;
+    margin-left: 0; 
+}
+
+.box-wrapper:nth-child(odd) img {
+    order: 1; 
+}
+
+/* Even Boxes (Right-aligned) */
+.box-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.box-wrapper:nth-child(even) .box {
+    text-align: right;
+    margin-right: 0; 
+}
+
+/* .container-subteams{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    flex-wrap: wrap;
 
 }
 
 .box1 {
+    position: relative;
     align-items: flex-start;
     margin-right: auto;
     margin-left: 2rem;
@@ -661,40 +739,20 @@ h1{
     height: 21.875rem;
     background: #18453b;
     border-radius: 1.5625rem;
-    padding: 0.0625rem;
+    padding: 2.5rem;
+    padding-right: 10rem;
     margin-bottom: 7.8125rem;
     box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
-.image-subteam-left{
-    margin-top: 1rem;
-    margin-left: auto;
-}
-
-.image-subteam-right{
-    margin-top: 10rem;
-    margin-right: auto;
-}
-
 #payload-image{
-    width:35rem;
+    position: absolute;
+    right: -40rem;
+    width:28rem;
     height: auto;
     transform: rotate(333deg);
     overflow: hidden;
-}
-
-#ebay-image{
-    width: 35rem;
-    height: auto;
-    transform: rotate(330deg);
-    overflow: hidden;
-}
-
-#manu-image{
-    width: 35rem;
-    height: auto;
-    transform: rotate(210deg);
-    overflow: hidden;
+    top: 10%;
 }
 
 .box2 {
@@ -704,10 +762,22 @@ h1{
     height: 21.875rem;
     background: #18453b;
     border-radius: 1.5625rem;
-    padding: 0.0625rem;
+    padding: 2.5rem;
+    padding-right: 10rem;
     margin-bottom: 7.8125rem;
     box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
+
+#manu-image{
+    position: absolute;
+    left: -40rem;
+    width:35rem;
+    height: auto;
+    transform: rotate(210deg);
+    overflow: hidden;
+    top: 50%;
+}
+
 
 .box3 {
     margin-right: auto;
@@ -716,9 +786,20 @@ h1{
     height: 21.875rem;
     background: #18453b;
     border-radius: 1.5625rem;
-    padding: 0.0625rem;
+    padding: 2.5rem;
+    padding-right: 10rem;
     margin-bottom: 7.8125rem;
     box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
+}
+
+#ebay-image{
+    position: absolute;
+    right: -40rem;
+    width:35rem;
+    height: auto;
+    transform: rotate(330deg);
+    overflow: hidden;
+    top: 10%;
 }
 
 .box4 {
@@ -728,41 +809,50 @@ h1{
     height: 21.875rem;
     background: #18453b;
     border-radius: 1.5625rem;
-    padding: 0.0625rem;
+    padding: 2.5rem;
+    padding-right: 10rem;
     margin-bottom: 7.8125rem;
     box-shadow: 0px 0px 12.5rem 1.5625rem #18453b;
 }
 
+#sparty-image{
+    position: absolute;
+    left: -30rem;
+    width:35rem;
+    height: auto;
+    overflow: hidden;
+    top: 0%;
+    width: 18rem;
+    border-radius: 10px;
+} */
+
 h1 {
     color: white;
     font-size: 4.6875rem;
-    text-align: center;
+    text-align: left;
 }
 
 #left {
-    padding: 25px;
     color: white;
     text-align: left;
     font-weight: 600;
-    padding-left: 4.6875rem;
     font-size: 2.5rem;
+    
 }
 
 #right {
-    padding: 25px;
     color: white;
     text-align: left;
     font-weight: 600;
-    padding-left: 4.6875rem;
     font-size: 2.5rem;
 }
 
 #textSubteams{
+    margin-top: 0.5rem;
     font-weight: 600;
     color: white;
-    padding-left: 4.6875rem;
-    padding-right: 4.6875rem;
     font-size: 1.25rem;
+    text-align: left;
 }
 .title {
     display: flex;
@@ -804,7 +894,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: -20rem;
     opacity: 0; /*creates animation when scrolling*/
     filter: blur(0.3125rem);
@@ -837,6 +926,8 @@ h1 {
     gap: 6.25rem;
     margin-bottom: 3.125rem;
     margin-top: 10rem;
+    align-items: center;
+
 }
 
 .person{
@@ -853,6 +944,7 @@ h1 {
     transform: translateX(-100%);
     transition: all 1s; 
     color: white;
+    
 }
 
 #pfp{
@@ -1094,9 +1186,7 @@ body{
         font-size: 2.5rem;
         margin-top: 1rem;
         color: red;
-        margin-right: 1rem;
-        margin-left: 1rem;
-
+        max-width: 90%;
     }
 
     .video-homepage {
@@ -1179,6 +1269,73 @@ body{
         font-size: 1.5rem;
 
     }
+
+    .titleLeadership{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .underline{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    /* subteams */
+
+    #context2{
+        font-size: 1rem;
+    }
+    .box-subteam{
+        max-width: 90%;
+        margin: 0 auto;
+        height: 25rem;
+        
+    }
+
+    .box-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        max-width: none;
+        flex-wrap: wrap; /* Allows wrapping */
+    }
+    .box-wrapper img {
+        margin-top: 1rem;
+    }
+    #left, #right{
+        font-size: 2rem;
+    }
+
+    #payload-image{
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+        max-width: 100%;
+    }
+
+    #manu-image{
+        margin: 0 auto;
+        margin-top: 8rem;
+        max-width: 100%;
+    }
+
+    #ebay-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: -3rem;
+        max-width: 100%;
+    }
+
+    #sparty-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 100%;
+    }
+
+    #textSubteams{
+        font-size: 1rem;
+    }
 }
 
 
@@ -1187,7 +1344,7 @@ body{
         text-align: center;
         font-size: 4rem;
         margin-top: 4rem;
-        line-height: 1.3;
+        /* line-height: 1.3; */
         color: green;
     }
 
@@ -1275,7 +1432,71 @@ body{
         font-size: 1.5rem;
 
     }
-    
+    .titleLeadership{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .underline{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    /* subteams */
+
+    .box-subteam{
+        max-width: 90%;
+        margin: 0 auto;
+        
+    }
+
+    .box-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: none;
+        flex-wrap: wrap; /* Allows wrapping */
+    }
+    .box-wrapper img {
+        margin-top: 1rem;
+    }
+    #left, #right{
+        font-size: 2rem;
+    }
+
+    #payload-image{
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+        max-width: 90%;
+    }
+
+    #manu-image{
+        margin: 0 auto;
+        margin-top: 8rem;
+        max-width: 100%;
+    }
+
+    #ebay-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: -3rem;
+        max-width: 100%;
+    }
+
+    #sparty-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 100%;
+    }
+
+    #textSubteams{
+        font-size: 1rem;
+    }
+
+
+
 }
 
 /* For devices with a maximum width of 767px */
@@ -1284,7 +1505,6 @@ body{
         color: orange;
         font-size: 4.5rem;
         margin-top: 4rem;
-        padding: 1rem;
     }
 
     .video-homepage {
@@ -1350,6 +1570,70 @@ body{
         margin: 0;
         padding: 0;
     }
+    .titleLeadership{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .underline{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+
+        /* subteams */
+
+        .box-subteam{
+            max-width: 90%;
+            height: 16rem;
+            margin: 0 auto;
+            
+        }
+    
+        .box-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: none;
+            flex-wrap: wrap; /* Allows wrapping */
+        }
+        .box-wrapper img {
+            margin-top: 1rem;
+        }
+        #left, #right{
+            font-size: 2rem;
+        }
+    
+        #payload-image{
+            margin: 0 auto;
+            margin-top: 3rem;
+            margin-bottom: -3rem;
+            max-width: 90%;
+        }
+    
+        #manu-image{
+            margin: 0 auto;
+            margin-top: 8rem;
+            max-width: 100%;
+        }
+    
+        #ebay-image{
+            margin: 0 auto;
+            margin-top: 4rem;
+            margin-bottom: -3rem;
+            max-width: 100%;
+        }
+    
+        #sparty-image{
+            margin: 0 auto;
+            margin-top: 4rem;
+            max-width: 100%;
+        }
+    
+        #textSubteams{
+            font-size: 1rem;
+        }
 }
 
 /* For devices with a minimum width of 768px and maximum width of 1200px */
@@ -1359,8 +1643,6 @@ body{
         color: blue;
         margin-top: 4rem;
         font-size: 5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
     #video-text {
@@ -1439,6 +1721,68 @@ body{
         margin: 0;
         padding: 0;
     }
+    .titleLeadership{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .underline{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
 
+    /* subteams */
+
+    .box-subteam{
+        max-width: 90%;
+        height: 15rem;
+        margin: 0 auto;
+    }
+
+    .box-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        max-width: none;
+        flex-wrap: wrap; /* Allows wrapping */
+    }
+    .box-wrapper img {
+        margin-top: 1rem;
+    }
+    #left, #right{
+        font-size: 2rem;
+    }
+
+    #payload-image{
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+        max-width: 90%;
+    }
+
+    #manu-image{
+        margin: 0 auto;
+        margin-top: 8rem;
+        max-width: 100%;
+    }
+
+    #ebay-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: -3rem;
+        max-width: 100%;
+    }
+
+    #sparty-image{
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 100%;
+    }
+
+    #textSubteams{
+        font-size: 1rem;
+    }
 
 }
