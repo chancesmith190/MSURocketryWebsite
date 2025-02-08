@@ -42,6 +42,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function changeContent(team) {
+    const contentBox = document.getElementById("content");
+    const contentContainer = document.querySelector(".content-box");
+    const contentImage = document.getElementById("content-image");
+    const teamInfo = {
+        "Text1": {
+            text: "Text1",
+            color: "#18453b",
+            image: ""
+        },
+        "Text2": {
+            text: "Text2",
+            color: "#18453b",
+            image: ""
+        },
+        "Text3": {
+            text: "Text3",
+            color: "#18453b",
+            image: ""
+        },
+        "Text4": {
+            text: "Text4",
+            color: "#18453b",
+            image: ""
+        }
+    };
+
+    if (teamInfo[team]) {
+        contentBox.textContent = teamInfo[team].text;
+        contentImage.src = teamInfo[team].image;
+        contentImage.classList.remove("hidden");
+
+        document.querySelectorAll(".team-buttons li").forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        event.target.classList.add("active");
+    }
+}
+
+
+window.onload = function () {
+    changeContent('Text1');
+};
+
+
 
 
 

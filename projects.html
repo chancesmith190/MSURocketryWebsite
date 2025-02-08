@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="nav">
+        <div id="logo-link">
+            <a href="index.html">
+                <img id="homeLogo" src="images/msu.png" alt="Logo">
+            </a>
+        </div>
+    
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    
+        <ul class="nav-links">
+
+            <li class="about-us">
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="ourMission.html">Our Mission</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="subteams.html">Subteams</a></li>
+                    </ul>
+                </div>
+            </li>
+    
+
+            <li class="mobile-only"><a href="ourMission.html">Our Mission</a></li>
+            <li class="mobile-only"><a href="leadership.html">Leadership</a></li>
+            <li class="mobile-only"><a href="subteams.html">Subteams</a></li>
+    
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+    
+            <li class="contact-button"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container-project">
+        <p id="rocket-name">SPARTACUS MK III</p>
+        <div class="container-info">
+            <div class="container-image">
+                <img id="rocket" src="images/rocket-cad.png">
+            </div>
+            <div class="container-stats">
+                <div class="stat-row">
+                    <p>Predicted Apogee</p> 
+                    <p>10,000 ft</p>
+                </div>
+                <div class="stat-row">
+                    <p>Height</p>
+                    <p>XX ft</p>
+                </div>
+                <div class="stat-row">
+                    <p>Weight</p>
+                    <p>XX kg</p>
+                </div>
+                <div class="stat-row">
+                    <p>Thrust</p>
+                    <p>XX N</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-teams">
+            <div class="button-bar">
+                <ul class="team-buttons">
+                    <li onclick="changeContent('Text1')">Text1</li>
+                    <li onclick="changeContent('Text2')">Text2</li>
+                    <li onclick="changeContent('Text3')">Text3</li>
+                    <li onclick="changeContent('Text4')">Text4</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <img id="content-image" src="" alt="Team Image">
+                <p id="content">Text1</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="circleContainer">
+        <div class="circle">
+            <a id="bottom" href="#"><span>Donate</span></a>
+        </div>
+        <div class="circle">
+            <a id="bottom" href="#"><span>Become a Sponsor</span></a>
+        </div>
+        <div class="circle">
+            <a id="bottom" href="#"><span>Join the Team</span></a>
+        </div>
+    </div>
+</body>
+</html>
