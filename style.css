@@ -432,7 +432,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 .container-homepage .sponsors, .container-homepage .project {
@@ -444,7 +444,7 @@ h1{
     width: 65rem;
     border-radius: 1.5625rem;
     background: linear-gradient(to bottom, #18453b 35%, white 35%);
-    box-shadow: 0px 0px 12.5rem 3.125rem #18453b;
+    box-shadow: 0px 0px 8rem 2rem #18453b;
     padding: 2rem;
     margin-bottom: 8rem;
 }
