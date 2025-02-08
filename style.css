@@ -147,7 +147,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 830px) {
     #homeLogo {
         width: 220px;
     }
@@ -195,7 +195,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 831px) {
     .nav-links li.mobile-only {
         display: none;
     }
@@ -1117,6 +1117,12 @@ h1 {
     font-family: 'Poppins';
 }
 
+.contact-inputs,
+.contact-left textarea,
+.contact-left button {
+    font-size: 16px; /* Prevents zoom on mobile */
+}
+
 @media (max-width: 50rem) {
     .contact-inputs {
         width: 80vw;
@@ -1372,8 +1378,9 @@ body{
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
     .title h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-top: 1rem;
+        text-align: center;
         color: red;
         max-width: 90%;
     }
@@ -1383,12 +1390,12 @@ body{
     }
 
     #video-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 6rem;
     }
 
     #sponsors-text{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 2rem;
         margin-bottom: 8rem;
     }
@@ -1702,7 +1709,7 @@ body{
 }
 
 /* For devices with a maximum width of 767px */
-@media (min-width: 601px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 830px) {
     .title h1 {
         color: orange;
         font-size: 4.5rem;
@@ -1840,7 +1847,7 @@ body{
 }
 
 /* For devices with a minimum width of 768px and maximum width of 1200px */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 831px) and (max-width: 1200px) {
     .title h1 {
         text-align: center;
         color: blue;
