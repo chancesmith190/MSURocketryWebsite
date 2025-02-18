@@ -275,7 +275,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
-    width: 100%;
+    width: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     height: 30rem;
     border-top: 3px solid white;
     flex-direction: column;
@@ -381,8 +383,7 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+
 }
 .slide-track{
     display: flex;
@@ -454,7 +455,6 @@ h1{
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 12rem;
     border-radius: 15px;
     flex-direction: column;
     max-width: 90%;
@@ -478,7 +478,7 @@ h1{
 }
 
 .container-video:hover{
-    transform: scale(1.005);
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -497,7 +497,6 @@ h1{
     margin: auto;
     justify-content: center;
     margin-top: 8rem;
-    margin-bottom: 8rem;
     gap: 5rem;
     width: 70rem;
     height: 20rem;
@@ -567,7 +566,11 @@ h1{
     width: 70rem;
     border-radius: 1.5625rem;
     background-color: #18453b;
-    
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-homepage .rocket:hover{
+    transform: scale(1.05);
 }
 
 .container-homepage .rocket h3{
@@ -635,12 +638,15 @@ h1{
 
 .container-mission{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
     margin-top: 8rem;
-    margin-bottom: 16rem;
-    justify-content: space-between;
+    gap: 5rem;
     width: 70rem;
     height: 20rem;
+    width: 90%; 
+    height: auto;
 }
 
 .container-mission .box {
@@ -784,15 +790,7 @@ h1{
 }
 
 /* subteams */
-#context2 {
-    color: white; 
-    font-size: 1.25rem;
-    padding-bottom: 18.75rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 50px;
-    margin-bottom: 10rem;
-}
+
 .container-subteams {
     display: flex;
     flex-direction: column;
@@ -801,6 +799,7 @@ h1{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 8rem;
 }
 
 .box-wrapper {
@@ -812,7 +811,7 @@ h1{
 }
 
 .box-subteam {
-    width: 45rem;
+    width: 50rem;
     height: 20rem;
     padding: 2rem;
     background-color: #18453b;
@@ -1410,32 +1409,46 @@ body{
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
 
+    .title{
+        margin-top: 12rem;
+        margin-bottom: 8rem;
+    }
     /* index */
     .title h1 {
         font-size: 3rem;
-        margin-top: 1rem;
         text-align: center;
         color: red;
-        max-width: 90%;
     }
 
-    #sponsors-images{
-        display: flex;
-        flex-direction: row;
-        width: 7rem;
-        object-fit: contain;
-    }
-    #sponsors-dafs{
-        width: 4rem;
-        margin-right: 3rem;
+    #video-homepage-text {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
     }
 
+    .container-goals .box h3{
+        font-size: 1.5rem;
+    }
+
+    .container-homepage .rocket{
+        width: 22.5rem;
+        height: 20rem;
+        padding: 0;
+    }
+
+    .container-homepage .rocket h3{
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
 
     #cad {
-        margin-top: 8rem;
+        margin-top: 5rem;
         width: 20rem;
-        height: auto;
-        height: auto;
     }
 
     .circle{
@@ -1456,10 +1469,10 @@ body{
 
     /* mission */
     #mis {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     #text-mission{
-        font-size: 1.5rem;
+        font-size: 1rem;
 
     }
 
@@ -1475,13 +1488,14 @@ body{
     }
 
     /* subteams */
-    #context2{
-        font-size: 1rem;
+    #subteams{
+        margin-top: 1rem;
+        font-size: 3rem;
     }
     .box-subteam{
         max-width: 90%;
         margin: 0 auto;
-        height: 27.5rem;    
+        height: 35rem;   
     }
 
     .box-wrapper{
@@ -1528,6 +1542,11 @@ body{
     }
 
     #textSubteams{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .circle-text{
         font-size: 1rem;
     }
 }
@@ -1541,12 +1560,12 @@ body{
         margin-top: 4rem;
         color: green;
     }
-    #video-text {
-
+    #video-homepage-text {
     }
 
     .container-homepage .rocket{
         width: 30rem;
+
     }
     #project-text{
         margin-top: 2.5rem;
@@ -1554,6 +1573,7 @@ body{
     }
     #cad {
         width: 25rem;
+        margin-top: 4rem;
     }
 
     #cad:hover{
@@ -1597,7 +1617,7 @@ body{
     .box-subteam{
         max-width: 90%;
         margin: 0 auto;
-        
+        height: 25rem;
     }
 
     .box-wrapper{
@@ -1704,7 +1724,7 @@ body{
 
     .box-subteam{
         max-width: 90%;
-        height: 16rem;
+        height: 20rem;
         margin: 0 auto;
         
     }
@@ -1813,8 +1833,8 @@ body{
 
     /* subteams */
     .box-subteam{
-        max-width: 90%;
-        height: 15rem;
+       
+        height: 20rem;
         margin: 0 auto;
     }
 
