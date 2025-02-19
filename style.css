@@ -287,7 +287,7 @@
     margin-top: 2rem;
     width: 10rem;
     height: auto;
-    border-radius: 50px;
+    border-radius: 20px;
     padding-left: 10px;
 }
 
@@ -659,7 +659,7 @@ h1{
     margin-top: 8rem;
     gap: 5rem;
     width: 70rem;
-    height: 30rem;
+    height: 20rem;
     width: 90%; 
     height: auto;
 }
@@ -669,93 +669,101 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     border-radius: 20px;
     width: 20rem;
-    height: 30rem;
+    height: 25rem;
     background-color: #18453b;
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
 }
 
-.container-mission .box h3{
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
-    color: white;
-    text-align: center;
-}
-
-.container-mission .box p{
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    font-family: 'Poppins';
-    color: white;
-}
-
-button:nth-child(1){
-    margin-top: 5rem;;
-}
-
-/* From Uiverse.io by cssbuttons-io */ 
-button {    
-    align-items: center;
-    background-image: linear-gradient(144deg, white, #1e5a4a 50%, #18453b);
-    border: 0;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #ffffff;
+.container-mission .box .top{
     display: flex;
-    font-size: 18px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-button:active, button:hover {
-    outline: 0;
-}
-
-button span {
-    background-color: black;
-    padding: 16px 24px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-}
-
-button:hover span {
-    background: none;
-}
-button:active {
-    transform: scale(0.9);
+    flex-direction: column;
+    align-items: center;
 }
 
 #competition{
     width: 150px;
     height: 150px;
+    object-fit: contain;
 }
 
 #resources{
     width: 150px;
     height: 150px;
+    object-fit: contain;
 }
 
 #handshake {
-    width: 200px;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
+.container-mission .box h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.container-mission .box .mission-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: black;
+    color: #18453b;
+    margin-top: 2rem;
+}
+
+.container-mission .box .mission-button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.container-mission .box .mission-button:hover span {
+    color: #1e5a4a;
+}
+
+.container-mission .box .mission-button::before,
+.container-mission .box .mission-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container-mission .box .mission-button::before {
+    content: "";
+    background: white;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.container-mission .box .mission-button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+   
 .container-mission .box:hover{
     transform: scale(1.05);
     
@@ -1225,7 +1233,9 @@ h1 {
 .contact-left textarea,
 .contact-left button {
     font-size: 16px; /* Prevents zoom on mobile */
+    font-family: 'Poppins';
 }
+
 
 @media (max-width: 50rem) {
     .contact-inputs {
@@ -1293,7 +1303,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0rem;
 }
 
 .container-rocket{
@@ -1315,6 +1324,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     width: 60rem;
+    margin-right: 10rem;
 }
 
 #rocket{
@@ -1453,24 +1463,28 @@ body{
     height: 22.5rem;
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: left;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem;
     margin-top: 5rem; 
     border: 2px solid #18453b;
 }
 
 #content-image{
-    width: 100px;
+    width: 250px;
     height: auto;
     margin-bottom: 10px; 
     border-radius: 8px;
     display: block;
+    margin-right: 1rem;
 }
+
+
+
 
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
@@ -1615,6 +1629,39 @@ body{
     .circle-text{
         font-size: 1rem;
     }
+    /* projects */
+    .container-info{
+        width: 20rem;
+        margin-left: 8rem;
+    }
+    .stat-row p{
+        font-size: 1rem;
+    }
+
+    .container-image #rocket{
+        height: 35rem;
+    }
+
+    .team-buttons li {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    
+    .container-teams{
+        margin-top: 0;
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .content-box p{
+        font-size: 0.75rem;
+    }
+    
+    #content-image{
+        width: 8rem;
+        margin-right: 1rem;
+    }
+
 }
 
 
@@ -1683,7 +1730,7 @@ body{
     .box-subteam{
         max-width: 90%;
         margin: 0 auto;
-        height: 28rem;
+        height: 25rem;
     }
 
     .box-wrapper{
@@ -1730,7 +1777,30 @@ body{
     #textSubteams{
         font-size: 1rem;
     }
+    /* projects */
+    .container-info{
+        width: 30rem;
+        margin-right: 5rem;
+    }
+    .container-teams{
+        width: 32rem;
+        height: 20rem;
+    }
 
+    .team-buttons li {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    
+    
+    .content-box p{
+        font-size: 0.75rem;
+    }
+    
+    #content-image{
+        width: 8rem;
+        margin-right: 1rem;
+    }
 }
 
 /* For devices with a maximum width of 767px */
@@ -1839,6 +1909,31 @@ body{
     #textSubteams{
         font-size: 1rem;
     }
+    /* project */
+    .container-info{
+        width: 35rem;
+        margin-left: 4rem;
+    }
+    .container-teams{
+        width: 38rem;
+        height: 20rem;
+    }
+
+    .team-buttons li {
+        font-size: 1.25rem;
+        padding: 12px;
+    }
+    
+    
+    .content-box p{
+        font-size: 1rem;
+    }
+    
+    #content-image{
+        width: 10rem;
+        margin-right: 1rem;
+    }
+
 }
 
 /* For devices with a minimum width of 768px and maximum width of 1200px */
@@ -1947,6 +2042,25 @@ body{
 
     #textSubteams{
         font-size: 1rem;
+    }
+    /* project */
+    .container-info{
+        width: 55rem;
+    }
+
+    .container-teams{
+        width: 50rem;
+    }
+
+    
+    
+    
+    .content-box p{
+        font-size: 1.25rem;
+    }
+    
+    #content-image{
+        margin-right: 1rem;
     }
 
 }

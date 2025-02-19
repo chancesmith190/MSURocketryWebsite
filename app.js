@@ -48,14 +48,14 @@ function changeContent(team) {
     const contentImage = document.getElementById("content-image");
     const teamInfo = {
         "Text1": {
-            text: "Text1",
+            text: "MSU Rocketry is developing a custom air brake system to precisely control the rocket's altitude and ensures it reaches the 10,000 ft target as close as possible.  The system consists of deployable panels that adjusts based on real-time sensor data from our flight monitoring system.",
             color: "#18453b",
-            image: ""
+            image: "images/air-brake-cad.png"
         },
         "Text2": {
-            text: "Text2",
+            text: "The Flight Monitor System is completey designed by our members to track and record real-time flight data, ensuring precise analysis of the rocket's performance. It collects telemetry, including altitude, gps, and acceleration, to optimize flight stability and safety. This system helps improve future launches through detailed data insights.",
             color: "#18453b",
-            image: ""
+            image: "images/pcb-flight.png"
         },
         "Text3": {
             text: "Text3",
