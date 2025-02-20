@@ -1497,7 +1497,6 @@ body{
     .title h1 {
         font-size: 3rem;
         text-align: center;
-        color: red;
     }
 
     #video-homepage-text {
@@ -1660,7 +1659,6 @@ body{
         text-align: center;
         font-size: 3rem;
         margin-top: 4rem;
-        color: green;
     }
     #video-homepage-text {
     }
@@ -1805,7 +1803,6 @@ body{
 @media (min-width: 601px) and (max-width: 830px) {
     /* index */
     .title h1 {
-        color: orange;
         font-size: 4rem;
         margin-top: 2rem;
         text-align: center;
@@ -1956,7 +1953,6 @@ body{
     /* index */
     .title h1 {
         text-align: center;
-        color: blue;
         font-size: 4rem;
     }
 
