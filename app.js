@@ -58,7 +58,7 @@ function changeContent(team) {
             image: "images/pcb-flight.png"
         },
         "Text3": {
-            text: "Text3",
+            text: "Spartacus Mk3 uses two Runcam Split 4 V2 cameras. The cameras feature a Sony 13MP image sensor for high-definition recording. One camera pointing straight up and the other straight down. Powered by four 18650 batteries our in-flight camera system is ready to deliver spectacular video of our flight.",
             color: "#18453b",
             image: ""
         },

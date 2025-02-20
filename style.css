@@ -727,7 +727,6 @@ h1{
     overflow: hidden;
     background: black;
     color: #18453b;
-    margin-top: 2rem;
 }
 
 .container-mission .box .mission-button span {
@@ -1137,6 +1136,7 @@ h1 {
     justify-content: center;
     padding: 0;
     margin: 0;
+    margin-top: 6rem;
     box-sizing: border-box;
 }
 
@@ -1548,23 +1548,12 @@ body{
     }
 
     /* mission */
-    #mis {
-        font-size: 3rem;
+    .infoMission{
+        width: 20rem;
+        height: 30rem;
     }
     #text-mission{
         font-size: 1rem;
-
-    }
-
-    .titleLeadership{
-        max-width: 90%;
-        margin: 0 auto;
-        margin-bottom: 4rem;
-    }
-    .underline{
-        max-width: 99%;
-        margin: 0 auto;
-        margin-bottom: 4rem;
     }
 
     /* subteams */
@@ -1730,7 +1719,7 @@ body{
     .box-subteam{
         max-width: 90%;
         margin: 0 auto;
-        height: 25rem;
+        height: 27rem;
     }
 
     .box-wrapper{
@@ -1801,9 +1790,18 @@ body{
         width: 8rem;
         margin-right: 1rem;
     }
+    /* mission */
+    .infoMission{
+        width: 28rem;
+        height: 28rem;
+        padding: 10px;
+    }
+    #text-mission{
+        font-size: 1.25rem;
+    }
 }
 
-/* For devices with a maximum width of 767px */
+/* For devices with a mcaximum width of 767px */
 @media (min-width: 601px) and (max-width: 830px) {
     /* index */
     .title h1 {
@@ -1854,6 +1852,14 @@ body{
         max-width: 90%;
         margin: 0 auto;
         margin-bottom: 4rem;
+    }
+
+    .container-homepage .rocket{
+        width: 35rem;
+    }
+
+    #cad{
+        width: 30rem;
     }
 
     /* subteams */
@@ -1932,6 +1938,15 @@ body{
     #content-image{
         width: 10rem;
         margin-right: 1rem;
+    }
+    /* mission */
+    .infoMission{
+        width: 32.5rem;
+        height: 25rem;
+        padding: 10px;
+    }
+    #text-mission{
+        font-size: 1.25rem;
     }
 
 }
@@ -2062,6 +2077,14 @@ body{
     #content-image{
         margin-right: 1rem;
     }
-
+    /* mission */
+    .infoMission{
+        width: 45rem;
+        height: 25rem;
+        padding: 10px;
+    }
+    #text-mission{
+        font-size: 1.5rem;
+    }
 }
 
