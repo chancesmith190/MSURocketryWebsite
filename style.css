@@ -621,6 +621,7 @@ h1{
     max-width: 90%;
     width: 40rem;
     padding: 1.5rem;
+    border-radius: 35px;
 }
 
 .infoMission{
@@ -1660,8 +1661,6 @@ body{
         font-size: 3rem;
         margin-top: 4rem;
     }
-    #video-homepage-text {
-    }
 
     .container-homepage .rocket{
         width: 30rem;
@@ -1808,10 +1807,6 @@ body{
         text-align: center;
     }
 
-    #video-text {
-
-    }
-
     #sponsors-dafs{
         width: 6rem;
     }
@@ -1954,10 +1949,6 @@ body{
     .title h1 {
         text-align: center;
         font-size: 4rem;
-    }
-
-    .container-video{
-
     }
 
     #video-homepage-text{
