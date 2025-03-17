@@ -271,16 +271,39 @@
 }
 
 .footer{
-    display:flex;
-    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 8rem;
+    padding-bottom: 5rem;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    height: 30rem;
+    min-height: 35rem;
     border-top: 3px solid white;
-    flex-direction: column;
+}
+
+.logo-footer{
+    margin-top: 2rem;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.credit a {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.credit a:hover {
+    color: #18453b;
 }
 
 #logo-full{
@@ -319,11 +342,11 @@
 
 /* buttons on bottom of page */
 .circleContainer{
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 4rem;
     gap: 25px;
+    margin-bottom: 4rem;
 }
 
 .circle-text {
@@ -1498,8 +1521,20 @@ body{
     margin-right: 1rem;
 }
 
+.made-by {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    color: #ffffff80;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-
+.made-by:hover {
+    color: #ffffff;
+}
 
 /* For devices with a maximum width of 480px */
 @media (max-width: 480px) {
@@ -1628,10 +1663,6 @@ body{
         margin-top: 0.5rem;
         font-size: 1rem;
     }
-
-    .circle-text{
-        font-size: 1rem;
-    }
     /* projects */
     .container-info{
         width: 20rem;
@@ -1665,8 +1696,86 @@ body{
         margin-right: 1rem;
     }
 
+    /* Footer responsive styles */
+    .footer {
+        height: auto;
+        min-height: 40rem;
+        padding: 2rem 1rem 4rem 1rem;
+        margin-top: 4rem;
+    }
+
+    .logo-footer {
+        margin-top: 1rem;
+    }
+
+    #logo-full {
+        width: 8rem;
+        padding-left: 0;
+    }
+
+    .social-media {
+        width: 100%;
+        padding-right: 0;
+        margin: 1.5rem 0;
+    }
+
+    #email-logo {
+        width: 50px;
+    }
+
+    #insta-logo {
+        width: 35px;
+    }
+
+    #youtube-logo {
+        width: 45px;
+    }
+
+    .circleContainer {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .circle-text {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .credit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+        height: auto;
+        min-height: 35rem;
+        padding: 2rem 1rem 4rem 1rem;
+    }
+
+    .social-media {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .circleContainer {
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .circle-text {
+        font-size: 1.3rem;
+    }
+
+    .credit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
 
 @media (min-width: 481px) and (max-width: 600px) {
     /* index */
@@ -1765,7 +1874,7 @@ body{
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: -3rem;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     #sparty-image{
@@ -1809,6 +1918,31 @@ body{
     }
     #text-mission{
         font-size: 1.25rem;
+    }
+
+    /* Footer responsive styles */
+    .footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .social-media {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .circleContainer {
+        gap: 1rem;
+    }
+
+    .circle-text {
+        font-size: 1.3rem;
+    }
+
+    .credit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
     }
 }
 
@@ -1909,7 +2043,7 @@ body{
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: -3rem;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     #sparty-image{
@@ -1953,6 +2087,31 @@ body{
     }
     #text-mission{
         font-size: 1.25rem;
+    }
+
+    /* Footer responsive styles */
+    .footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .social-media {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .circleContainer {
+        gap: 1rem;
+    }
+
+    .circle-text {
+        font-size: 1.3rem;
+    }
+
+    .credit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
     }
 }
 
@@ -2046,7 +2205,7 @@ body{
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: -3rem;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     #sparty-image{
@@ -2086,5 +2245,32 @@ body{
     #text-mission{
         font-size: 1.5rem;
     }
+
+    /* Footer responsive styles */
+    .footer {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .social-media {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .circleContainer {
+        gap: 1rem;
+    }
+
+    .circle-text {
+        font-size: 1.3rem;
+    }
+
+    .credit {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
 }
+
+
 
