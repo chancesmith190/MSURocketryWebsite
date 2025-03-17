@@ -807,15 +807,6 @@ h1{
     margin-bottom: 0.625rem;
     margin-top: 12.5rem;
 }
-.underline{
-    max-width: 90%;
-    width: 56.25rem;
-    height: 0.3125rem;
-    background-color: #18453b;
-    border-radius: 0.9375rem;
-    margin-bottom: 12.5rem;
-    opacity: 0;
-}
 
 .container{
     display: flex;
@@ -1057,6 +1048,7 @@ h1 {
     border-radius: 0.9375rem;
     margin-bottom: 12.5rem;
     opacity: 0;
+    max-width: 90%;
 }
 
 .container-leadership{
