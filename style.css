@@ -1213,6 +1213,7 @@ h1 {
     border-radius: 3.125rem;
     background: #18453b;
     font-family: 'Poppins';
+    font-weight: 700;
 }
 
 .contact-left button:hover{
