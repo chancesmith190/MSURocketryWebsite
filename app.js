@@ -60,12 +60,12 @@ function changeContent(team) {
         "Text3": {
             text: "Spartacus Mk3 uses two Runcam Split 4 V2 cameras. The cameras feature a Sony 13MP image sensor for high-definition recording. One camera pointing straight up and the other straight down. Powered by four 18650 batteries our in-flight camera system is ready to deliver spectacular video of our flight.",
             color: "#18453b",
-            image: ""
+            image: "images/camera.jpg"
         },
         "Text4": {
-            text: "Text4",
+            text: "Our IREC payload is a compact, low-cost dosimeter inspired by NASA's RaD-X mission, designed to improve radiation models in aviation. Adapting the Cosmic Watch Muon Detector, it measures cosmic ray flux across multiple rocket flights, analyzing altitude, latitude, and geomagnetic effects on exposure",
             color: "#18453b",
-            image: ""
+            image: "images/cosmic-watch.jpg"
         }
     };
 
@@ -74,17 +74,33 @@ function changeContent(team) {
         contentImage.src = teamInfo[team].image;
         contentImage.classList.remove("hidden");
 
+        // Remove active class from all buttons
         document.querySelectorAll(".team-buttons li").forEach((btn) => {
             btn.classList.remove("active");
         });
 
-        event.target.classList.add("active");
+        // Add active class to the clicked button or the Air Brakes button on initial load
+        if (event && event.target) {
+            event.target.classList.add("active");
+        } else {
+            // If no event (initial load), select the Air Brakes button
+            document.querySelector(".team-buttons li:first-child").classList.add("active");
+        }
     }
 }
 
-
-window.onload = function () {
-    changeContent('Text1');
+window.onload = function() {
+    // Set initial content
+    const contentBox = document.getElementById("content");
+    const contentImage = document.getElementById("content-image");
+    
+    // Set the initial content for Air Brakes
+    contentBox.textContent = teamInfo["Text1"].text;
+    contentImage.src = teamInfo["Text1"].image;
+    contentImage.classList.remove("hidden");
+    
+    // Ensure the Air Brakes button is highlighted
+    document.querySelector(".team-buttons li:first-child").classList.add("active");
 };
 
 

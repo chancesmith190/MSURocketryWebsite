@@ -1433,7 +1433,6 @@ body{
     gap: 2rem; 
 }
 
-
 .team-buttons li {
     flex: 1;
     list-style: none; 
@@ -1442,21 +1441,20 @@ body{
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .team-buttons li:hover {
     background-color: #18453b;
 }
 
-.team-buttons li:last-child {
-    border-right: none;
+.team-buttons li.active {
+    background-color: #18453b;
+    color: white;
 }
 
-.team-buttons .active {
-    background-color: #18453b !important;
-    color: white;
+.team-buttons li:last-child {
+    border-right: none;
 }
 
 .content-box {
@@ -1940,7 +1938,6 @@ body{
     #text-mission{
         font-size: 1.25rem;
     }
-
 }
 
 /* For devices with a minimum width of 768px and maximum width of 1200px */
