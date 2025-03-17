@@ -1706,17 +1706,12 @@ body{
 
     .logo-footer {
         margin-top: 1rem;
+        padding-left: 8px;
     }
 
     #logo-full {
         width: 8rem;
         padding-left: 0;
-    }
-
-    .social-media {
-        width: 100%;
-        padding-right: 0;
-        margin: 1.5rem 0;
     }
 
     #email-logo {
@@ -1757,7 +1752,6 @@ body{
     }
 
     .social-media {
-        width: 100%;
         padding-right: 0;
     }
 
@@ -1927,8 +1921,7 @@ body{
     }
 
     .social-media {
-        width: 100%;
-        padding-right: 0;
+        padding-right: 1.5rem;
     }
 
     .circleContainer {
@@ -2096,8 +2089,7 @@ body{
     }
 
     .social-media {
-        width: 100%;
-        padding-right: 0;
+        padding-right: 1.5rem;
     }
 
     .circleContainer {
@@ -2251,10 +2243,9 @@ body{
         height: auto;
         padding: 2rem 1rem;
     }
-
-    .social-media {
-        width: 100%;
-        padding-right: 0;
+    
+    .logo-footer{
+        padding-left: 1rem;
     }
 
     .circleContainer {
