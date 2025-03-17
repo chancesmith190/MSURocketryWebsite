@@ -808,6 +808,7 @@ h1{
     margin-top: 12.5rem;
 }
 .underline{
+    max-width: 90%;
     width: 56.25rem;
     height: 0.3125rem;
     background-color: #18453b;
