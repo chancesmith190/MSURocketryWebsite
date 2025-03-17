@@ -40,9 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener("click", function () {
         menu.classList.toggle("active");
     });
+
+    // Set initial content and active state
+    if (document.querySelector(".team-buttons")) {
+        changeContent('Text1', true);
+    }
 });
 
-function changeContent(team) {
+function changeContent(team, isInitialLoad = false, buttonElement = null) {
     const contentBox = document.getElementById("content");
     const contentContainer = document.querySelector(".content-box");
     const contentImage = document.getElementById("content-image");
@@ -79,20 +84,14 @@ function changeContent(team) {
             btn.classList.remove("active");
         });
 
-        // Add active class to the clicked button or the Air Brakes button on initial load
-        if (event && event.target) {
-            event.target.classList.add("active");
-        } else {
-            // If no event (initial load), select the Air Brakes button
+        // Add active class to the appropriate button
+        if (isInitialLoad) {
             document.querySelector(".team-buttons li:first-child").classList.add("active");
+        } else if (buttonElement) {
+            buttonElement.classList.add("active");
         }
     }
 }
-
-window.onload = function() {
-    // Set initial content and active state
-    changeContent('Text1');
-};
 
 
 
