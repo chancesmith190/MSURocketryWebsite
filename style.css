@@ -1249,18 +1249,33 @@ h1 {
 
 /* thanks */
 .containerThanks{
-    text-align: center;
+    display: flex;
+    margin-top: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
 #thanks{
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
 }
 
 #thanksMessage{
+    color: white;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+#thanks-image{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 35px;
 }
 
 .back-button{

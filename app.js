@@ -90,17 +90,8 @@ function changeContent(team) {
 }
 
 window.onload = function() {
-    // Set initial content
-    const contentBox = document.getElementById("content");
-    const contentImage = document.getElementById("content-image");
-    
-    // Set the initial content for Air Brakes
-    contentBox.textContent = teamInfo["Text1"].text;
-    contentImage.src = teamInfo["Text1"].image;
-    contentImage.classList.remove("hidden");
-    
-    // Ensure the Air Brakes button is highlighted
-    document.querySelector(".team-buttons li:first-child").classList.add("active");
+    // Set initial content and active state
+    changeContent('Text1');
 };
 
 
