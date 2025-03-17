@@ -286,6 +286,7 @@
 
 .logo-footer{
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .credit {
@@ -311,7 +312,7 @@
     width: 10rem;
     height: auto;
     border-radius: 20px;
-    padding-left: 10px;
+
 }
 
 .social-media{
@@ -1706,12 +1707,12 @@ body{
 
     .logo-footer {
         margin-top: 1rem;
-        padding-left: 8px;
+        margin-right: 0.5rem;
     }
 
     #logo-full {
         width: 8rem;
-        padding-left: 0;
+
     }
 
     #email-logo {
@@ -1753,6 +1754,10 @@ body{
 
     .social-media {
         padding-right: 0;
+    }
+
+    .logo-footer {
+        margin-left: 1rem;
     }
 
     .circleContainer {
@@ -2245,7 +2250,7 @@ body{
     }
     
     .logo-footer{
-        padding-left: 1rem;
+        
     }
 
     .circleContainer {
