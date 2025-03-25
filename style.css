@@ -1736,6 +1736,9 @@ body{
         bottom: 1rem;
         right: 1rem;
     }
+    .underline{
+        max-width: 90%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
